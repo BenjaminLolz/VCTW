@@ -85,3 +85,29 @@
   font-size: 1rem;
   font-weight: bold;
 }
+
+.video-container {
+  position: relative;
+  display: inline-block;
+  width: 560px; /* Adjust the size as needed */
+  margin: 20px;
+  border-radius: 10px; /* Makes the corners rounded */
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for the box */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-container:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4); /* More prominent shadow on hover */
+  border-radius: 15px; /* Slightly more rounding */
+}
+
+.video-description {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+  text-align: justify;
+}
+
