@@ -111,3 +111,13 @@
   text-align: justify;
 }
 
+@media (max-width: 768px) {
+  .video-container {
+    width: 90%; /* Reduce size for smaller screens */
+    margin: 10px auto; /* Center-align videos on mobile */
+  }
+
+  .video-description {
+    font-size: 12px; /* Smaller font size for mobile */
+  }
+}
