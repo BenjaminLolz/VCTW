@@ -1,39 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Videoke Change The World</title>
-    <link rel="stylesheet" href="styles/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Videoke Change The World</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Videoke Change The World</h1>
-        <p>Sing your heart out with the latest karaoke videos!</p>
-    </header>
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="Videoke Logo">
+    </div>
+    <nav class="nav-links">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section class="hero">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="videos.html">Videos</a></li>
-            </ul>
-        </nav>
-    </section>
+  <!-- Main Banner -->
+  <section class="banner">
+    <h1>Videoke Change The World</h1>
+    <p>Sing your heart out with the latest karaoke videos!</p>
+  </section>
 
-    <section class="new-uploads">
-        <h2>New Uploads</h2>
-        <div class="video-grid">
-            <div class="video">
-                <iframe width="1280" height="720" src="https://www.youtube.com/embed/EIkd_N19nq0?si=-ASBLfyIj2CopJ4-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <p>APT - Rose ft. Bruno Mars (Videoke)</p>
-            </div>
-            <div class="video">
-                <iframe width="1280" height="720" src="https://www.youtube.com/embed/6FdUsl_aLKY?si=6tsmGMZEjeNyoKE9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <p>Dancing Queen - ABBA (Videoke)</p>
-            </div>
-        </div>
-    </section>
+  <!-- New Uploads Section -->
+  <section class="new-uploads" id="home">
+    <h2>New Uploads</h2>
+    <div class="video-grid">
+      <div class="video-box">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/EIkd_N19nq0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <p>APT - Rose ft. Bruno Mars (Videoke)</p>
+      </div>
+      <div class="video-box">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <p>Dancing Queen - ABBA (Videoke)</p>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
