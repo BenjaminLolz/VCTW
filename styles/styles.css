@@ -9,9 +9,10 @@
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Logo on the left, menu on the right */
-  background-color: #333;
+  justify-content: space-between;
+  background-color: #2c3e50; /* Dark navy for navbar */
   padding: 10px 20px;
+  font-family: 'Open Sans', sans-serif; /* Use Open Sans for navbar */
 }
 
 .logo img {
@@ -21,31 +22,34 @@
 .nav-links ul {
   list-style: none;
   display: flex;
-  gap: 20px; /* Space between menu items */
+  gap: 20px;
 }
 
 .nav-links ul li a {
-  color: white;
+  color: #ecf0f1; /* Light gray for links */
   text-decoration: none;
   font-weight: bold;
   font-size: 16px;
+  transition: color 0.3s ease;
 }
 
 .nav-links ul li a:hover {
-  color: #00ffcc;
+  color: #00ffcc; /* Highlight color */
 }
 
 /* Banner Section */
 .banner {
-  background-color: #6a0dad;
+  background: linear-gradient(90deg, #6a0dad, #8e44ad); /* Gradient purple */
   color: white;
   text-align: center;
   padding: 50px 20px;
+  font-family: 'Roboto', sans-serif; /* Use Roboto for banner */
 }
 
 .banner h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
+  font-family: 'Open Sans', sans-serif; /* Highlight header */
 }
 
 .banner p {
@@ -56,68 +60,88 @@
 .new-uploads {
   padding: 20px;
   text-align: center;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa; /* Light gray background */
 }
 
 .new-uploads h2 {
   margin-bottom: 20px;
   font-size: 2rem;
+  font-family: 'Open Sans', sans-serif; /* Bold headers */
+  color: #2c3e50; /* Navy for section headers */
 }
 
+/* Video Grid */
 .video-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
+  padding: 20px;
 }
 
-.video-box {
-  position: relative;
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.video-box:hover {
-  transform: translateY(-10px);
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
-}
-
-.video-box p {
-  margin-top: 10px;
-  font-size: 1rem;
-  font-weight: bold;
-}
-
+/* Video Container */
 .video-container {
   position: relative;
   display: inline-block;
-  width: 560px; /* Adjust the size as needed */
-  margin: 20px;
-  border-radius: 10px; /* Makes the corners rounded */
+  width: 560px;
+  margin: 20px auto;
+  border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for the box */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #ffffff; /* White background for video boxes */
+  font-family: 'Roboto', sans-serif;
 }
 
 .video-container:hover {
-  transform: scale(1.05); /* Slight zoom effect */
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4); /* More prominent shadow on hover */
-  border-radius: 15px; /* Slightly more rounding */
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.video-container h3 {
+  font-family: 'Open Sans', sans-serif; /* Titles use Open Sans */
+  font-weight: 600;
+  font-size: 18px;
+  margin: 10px 15px 5px; /* Space around titles */
+  color: #2c3e50; /* Navy for video titles */
 }
 
 .video-description {
-  margin-top: 10px;
+  margin: 0 15px 15px; /* Padding around description */
   font-size: 14px;
-  color: #666;
-  line-height: 1.6;
+  color: #666; /* Gray for descriptions */
+  line-height: 1.5;
   text-align: justify;
 }
 
+/* Footer */
+footer {
+  background-color: #2c3e50; /* Navy footer */
+  color: #ecf0f1; /* Light text */
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0.9rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+footer a {
+  color: #00ffcc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
   .video-container {
-    width: 90%; /* Reduce size for smaller screens */
-    margin: 10px auto; /* Center-align videos on mobile */
+    width: 90%;
+    margin: 10px auto;
   }
 
   .video-description {
-    font-size: 12px; /* Smaller font size for mobile */
+    font-size: 12px;
   }
 }
