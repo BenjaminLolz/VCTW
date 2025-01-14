@@ -73,7 +73,7 @@
 
 /* Video Grid */
 .video-grid {
-  display: flex; /* Use Flexbox for consistent alignment */
+  display: grid; /* Use Flexbox for consistent alignment */
   flex-wrap: wrap; /* Allow wrapping on smaller screens */
   justify-content: center; /* Center-align videos */
   gap: 20px; /* Spacing between videos */
