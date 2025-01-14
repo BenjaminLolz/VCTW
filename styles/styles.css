@@ -73,7 +73,9 @@
 
 /* Video Grid */
 .video-grid {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  justify-content: center; /* Center-align videos */
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   padding: 20px;
@@ -83,8 +85,9 @@
 .video-container {
   position: relative;
   display: inline-block;
-  width: 560px;
-  margin: 20px auto;
+  width: 100%; /* Ensure videos are responsive */
+  max-width: 300px; /* Limit maximum width */
+  margin: 0 auto; /* Center-align each video container */
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
