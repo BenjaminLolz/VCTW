@@ -73,11 +73,10 @@
 
 /* Video Grid */
 .video-grid {
-  display: flex;
+  display: flex; /* Use Flexbox for consistent alignment */
   flex-wrap: wrap; /* Allow wrapping on smaller screens */
   justify-content: center; /* Center-align videos */
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+  gap: 20px; /* Spacing between videos */
   padding: 20px;
 }
 
@@ -139,13 +138,14 @@ footer a:hover {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .video-container {
-    width: 90%;
-    margin: 10px auto;
+  .video-grid {
+    flex-direction: column; /* Stack videos vertically */
+    align-items: center; /* Center each video */
   }
 
-  .video-description {
-    font-size: 12px;
+  .video-container {
+    width: 90%; /* Reduce width for mobile */
+    margin: 10px auto; /* Ensure centering */
   }
 }
 
