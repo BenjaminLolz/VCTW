@@ -70,29 +70,25 @@
   font-family: 'Open Sans', sans-serif; /* Bold headers */
   color: #2c3e50; /* Navy for section headers */
 }
-
 /* Video Grid */
 .video-grid {
-  display: grid; /* Use Flexbox for consistent alignment */
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
-  justify-content: center; /* Center-align videos */
-  gap: 20px; /* Spacing between videos */
+  display: flex; /* Switch to flex for better alignment */
+  flex-wrap: wrap; /* Allow wrapping of items */
+  justify-content: center; /* Center-align items horizontally */
+  gap: 20px; /* Add spacing between videos */
   padding: 20px;
 }
 
 /* Video Container */
 .video-container {
-  position: relative;
-  display: inline-block;
-  width: 100%; /* Ensure videos are responsive */
-  max-width: 300px; /* Limit maximum width */
+  width: 100%; /* Ensure it adjusts to the grid/parent container */
+  max-width: 300px; /* Limit the width of the video boxes */
   margin: 0 auto; /* Center-align each video container */
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-color: #ffffff; /* White background for video boxes */
-  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
 }
 
 .video-container:hover {
