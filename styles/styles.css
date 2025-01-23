@@ -178,6 +178,21 @@ footer a:hover {
   .video-description {
     font-size: 14px; /* Adjust font size for readability */
   }
+/* Desktop-specific layout */
+@media (min-width: 769px) {
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .video-container {
+    max-width: 300px; /* Keep the video container width consistent */
+    margin: 0 auto; /* Center-align the containers */
+  }
 }
+
 
 
