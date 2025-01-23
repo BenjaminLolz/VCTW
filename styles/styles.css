@@ -170,3 +170,14 @@ footer a:hover {
     border-radius: 4px;
 }
 
+@media (max-width: 768px) {
+  .video-container {
+    width: 90%; /* Take up 90% of the screen width on smaller devices */
+  }
+
+  .video-description {
+    font-size: 14px; /* Adjust font size for readability */
+  }
+}
+
+
