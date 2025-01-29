@@ -95,21 +95,22 @@ nav {
 
 .video-grid {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  max-width: 1200px;
-  margin: auto;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  justify-content: center; /* Center the videos */
+  gap: 20px; /* Space between videos */
+  max-width: 1200px; /* Keep existing width limit */
+  margin: auto; /* Center on page */
 }
 
 .video-container {
+  width: 30%; /* Fit 3 in a row */
+  min-width: 280px; /* Prevent too small videos */
+  max-width: 400px; /* Keep existing max width */
   background-color: white;
-  border-radius: 12px;
-  padding: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 15px; /* Keep padding */
+  border-radius: 12px; /* Keep rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Keep existing shadow */
   text-align: center;
-  width: 100%;
-  max-width: 400px;
 }
 
 .video-container iframe {
