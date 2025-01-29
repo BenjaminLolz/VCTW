@@ -290,5 +290,14 @@ footer a:hover {
     font-size: 16px; /* Adjust font size for readability */
     padding: 10px; /* Increase padding for touch devices */
   }
+  
+  /* Add spacing at the bottom of the video grid */
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 videos per row */
+    gap: 1em;
+    margin-bottom: 50px; /* Add space between the grid and the footer */
+}
+
 }
 
