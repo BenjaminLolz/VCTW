@@ -82,10 +82,25 @@
   padding: 20px;
 }
 
+.video {
+    text-align: center; /* Center-align the content inside video containers */
+    overflow: hidden; /* Prevent overflow issues */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video p {
+    font-size: 14px; /* Adjust font size for captions */
+    margin-top: 0.5em; /* Add some space between iframe and text */
+    color: #333; /* Set a readable color for captions */
+}
+
 .video-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ensures videos fit nicely */
+    gap: 1em; /* Add spacing between items */
+    justify-items: center; /* Center-align grid items */
 }
 
 .video-container {
@@ -100,9 +115,9 @@
 }
 
 .video iframe {
-    width: 100%;
-    height: 200px;
-    border-radius: 8px;
+    width: 100%; /* Ensure iframe takes full width of the container */
+    height: 180px; /* Set a consistent height */
+    border-radius: 8px; /* Rounded corners for iframes */
 }
 
 .video-container h3 {
