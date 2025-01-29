@@ -106,11 +106,31 @@
   border-radius: 8px;
 }
 
+/* Video Captions */
 .video p {
-  font-size: 14px; /* Adjust font size for captions */
-  margin-top: 0.5em; /* Add some space between iframe and text */
-  color: #333; /* Set a readable color for captions */
+  font-family: 'Open Sans', sans-serif; /* Use Open Sans for readability */
+  font-size: 16px; /* Larger font size for better visibility */
+  font-weight: 600; /* Slightly bold */
+  color: #2c3e50; /* Dark navy color for captions */
+  margin-top: 10px; /* Add space above the caption */
+  line-height: 1.4; /* Adjust line height for better readability */
 }
+
+/* Video Titles on Front Page */
+.front-page-video-grid .video p {
+  text-align: center; /* Center-align captions */
+}
+
+/* Section Headers (Optional for New Uploads or Other Sections) */
+.new-uploads h2 {
+  font-family: 'Roboto', sans-serif; /* Use Roboto for headings */
+  font-size: 2rem; /* Larger font size for prominence */
+  color: #6a0dad; /* Match the purple gradient theme */
+  text-transform: uppercase; /* Make headings uppercase for emphasis */
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+}
+
 
 /* New Uploads Section */
 .new-uploads {
