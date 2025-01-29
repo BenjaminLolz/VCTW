@@ -56,6 +56,22 @@
   color: #2c3e50; /* Dark text on hover */
 }
 
+/* Center the logo on mobile screens */
+@media (max-width: 768px) {
+  .banner .logo {
+    display: block;
+    margin: 0 auto; /* Center the logo horizontally */
+    max-width: 80%; /* Adjust size for smaller screens */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .banner img {
+    height: auto; /* Let the image resize naturally */
+    max-height: 120px; /* Ensure it doesn't get too big */
+    margin: 0 auto; /* Center-align if additional spacing is needed */
+  }
+}
+
 /* Front Page Videos */
 .front-page-video-grid {
   display: grid;
