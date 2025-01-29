@@ -6,15 +6,15 @@ const pagination = document.getElementById("pagination");
 function renderPage(page) {
   const startIndex = (page - 1) * videosPerPage;
   const endIndex = startIndex + videosPerPage;
-  const paginatedVideos = videos.slice(startIndex, endIndex);
+  const paginatedVideos = videoData.slice(startIndex, endIndex); // Use videoData from title.js
 
-  renderVideos(paginatedVideos); // Use existing renderVideos function
+  renderVideos(paginatedVideos); // Call renderVideos from title.js
   updatePagination(page);
 }
 
 // Function to update pagination navigation
 function updatePagination(page) {
-  const totalPages = Math.ceil(videos.length / videosPerPage);
+  const totalPages = Math.ceil(videoData.length / videosPerPage);
   pagination.innerHTML = "";
 
   for (let i = 1; i <= totalPages; i++) {
@@ -31,8 +31,7 @@ function updatePagination(page) {
 
 // Initialize the videos and render the first page
 document.addEventListener("DOMContentLoaded", () => {
-  if (window.videoData && Array.isArray(window.videoData)) {
-    videos = window.videoData;
+  if (Array.isArray(videoData)) {
     renderPage(currentPage); // Start with the first page
   } else {
     console.error("Video data could not be loaded!");
