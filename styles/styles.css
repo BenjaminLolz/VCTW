@@ -270,6 +270,39 @@ footer a:hover {
   text-decoration: underline;
 }
 
+.video-thumbnail {
+  position: relative;
+  cursor: pointer;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.video-thumbnail img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.video-thumbnail .play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+
+.video-thumbnail:hover .play-button {
+  background: rgba(0, 0, 0, 0.8);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   /* Adjust video grid layout for smaller screens */
