@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse and sing along with the latest karaoke videos on Videoke Change The World. Enjoy a wide collection of videos across genres.">
+  <meta name="keywords" content="karaoke, videoke, sing-along, music videos, karaoke songs">
   <title>Videos - Videoke Change The World</title>
   <link rel="stylesheet" href="styles/styles.css">
 </head>
@@ -23,14 +25,15 @@
 
   <main>
     <div class="search-bar-container">
-      <input type="text" id="search-bar" placeholder="Search for a song...">
+      <input type="text" id="search-bar" placeholder="Search for a song..." aria-label="Search songs by title" aria-describedby="search-description">
+      <span id="search-description" class="visually-hidden">Type a song title to filter the video list below</span>
     </div>
 
     <!-- Single video grid for dynamic content -->
-    <div id="video-grid" class="video-grid"></div>
+    <div id="video-grid" class="video-grid" aria-live="polite" aria-label="Video list"></div>
 
     <!-- Pagination controls -->
-    <div id="pagination" class="pagination"></div>
+    <div id="pagination" class="pagination" aria-label="Pagination controls"></div>
   </main>
 
   <footer>
@@ -43,7 +46,7 @@
   </footer>
 
   <!-- Load JavaScript for dynamic content -->
-  <script src="javascript/title.js"></script>
-  <script src="javascript/load.js"></script>
+  <script src="javascript/title.js" defer></script>
+  <script src="javascript/load.js" defer></script>
 </body>
 </html>
