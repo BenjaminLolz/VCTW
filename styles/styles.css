@@ -26,6 +26,10 @@
   height: 50px;
 }
 
+nav {
+    display: none;
+}
+
 .nav-links ul {
   list-style: none;
   display: flex;
