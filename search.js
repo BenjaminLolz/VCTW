@@ -1,8 +1,6 @@
-// script.js
-
 // Select the search bar and all video containers
 const searchBar = document.getElementById('search-bar');
-const videoContainers = document.querySelectorAll('.video-container');
+const videoContainers = document.querySelectorAll('.video'); // Change from .video-container to .video
 
 // Add event listener for input
 searchBar.addEventListener('input', (event) => {
@@ -10,7 +8,7 @@ searchBar.addEventListener('input', (event) => {
 
   // Loop through each video container
   videoContainers.forEach((video) => {
-    const title = video.getAttribute('data-title').toLowerCase();
+    const title = video.querySelector('p').textContent.toLowerCase(); // Get title from <p> tag
 
     // Check if the title includes the search query
     if (title.includes(searchQuery)) {
