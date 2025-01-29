@@ -26,8 +26,10 @@
   height: 50px;
 }
 
-nav {
-    display: none;
+#homepage .navigation-bar {
+  display: none;
+}
+
 }
 
 .nav-links ul {
