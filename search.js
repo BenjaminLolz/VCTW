@@ -2,6 +2,7 @@
 const searchBar = document.getElementById("search-bar");
 const videoContainers = document.querySelectorAll(".video");
 
+console.log("search.js is loaded and running");
 console.log("Search bar detected:", searchBar); // Log search bar detection
 console.log("Video containers detected:", videoContainers); // Log all videos detected
 
