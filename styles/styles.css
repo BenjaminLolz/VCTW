@@ -64,25 +64,37 @@
   padding: 20px; /* Padding around the grid */
 }
 
-.front-page-video-grid .video {
-  background-color: white; /* Optional: Add a background for each video card */
-  border-radius: 8px; /* Rounded corners for the video container */
+.video-container {
+  background-color: white; /* Background for each video card */
+  border-radius: 8px; /* Rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
   overflow: hidden; /* Prevent overflow */
   text-align: center; /* Center-align content */
+  padding: 10px; /* Add padding for spacing */
 }
 
-.front-page-video-grid iframe {
-  width: 100%; /* Full width of the container */
-  height: 220px; /* Adjust height as needed */
-  border-radius: 8px; /* Match the container's rounded corners */
+.video-container iframe {
+  width: 100%; /* Full width of container */
+  height: 200px; /* Adjust height */
+  border-radius: 8px; /* Rounded corners for the iframe */
 }
 
-.front-page-video-grid .video p {
-  margin: 10px 0 0; /* Add space above the caption */
-  color: #333; /* Caption text color */
-  font-size: 14px; /* Adjust font size for captions */
-  font-family: 'Poppins', sans-serif; /* Modern font for captions */
+.video-container h3 {
+  font-family: 'Poppins', sans-serif; /* New modern font */
+  font-size: 18px; /* Title font size */
+  font-weight: 600; /* Semi-bold font weight */
+  color: #2c3e50; /* Dark navy color */
+  margin-top: 10px; /* Spacing above the title */
+  line-height: 1.4; /* Adjusted line height */
+}
+
+.video-description {
+  font-family: 'Roboto', sans-serif; /* Clean font for descriptions */
+  font-size: 14px; /* Description font size */
+  color: #666; /* Gray color for readability */
+  margin-top: 10px; /* Spacing above the description */
+  text-align: justify; /* Justify the text for better layout */
+  line-height: 1.6; /* Increase line height for readability */
 }
 
 /* Video Grid for Video Page */
