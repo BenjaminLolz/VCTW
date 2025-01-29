@@ -103,9 +103,9 @@
 }
 
 .video-container iframe {
-  width: 100%; /* Always fit the container */
-  height: 170px; /* Reduce the height */
-  border-radius: 8px; /* Rounded corners for the video */
+  width: 100%; /* Ensures the iframe adjusts to the container width */
+  height: 170px; /* Controls the height */
+  border-radius: 8px; /* Optional: rounded corners */
 }
 
 .video-container h3 {
