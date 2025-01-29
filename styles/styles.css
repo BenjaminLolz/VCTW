@@ -165,6 +165,51 @@
   font-style: italic; /* Make it italic for distinction */
 }
 
+/* About Section Styling */
+.about-section {
+  background-color: #f8f9fa; /* Light gray background for contrast */
+  padding: 40px 20px; /* Add padding for spacing */
+  text-align: center; /* Center-align text */
+  font-family: 'Poppins', sans-serif; /* Modern font */
+}
+
+.about-section h2 {
+  font-size: 2rem; /* Large font for heading */
+  color: #6a0dad; /* Match purple theme */
+  text-transform: uppercase; /* Make heading uppercase */
+  margin-bottom: 20px; /* Add spacing below the heading */
+}
+
+.about-section p {
+  font-size: 1rem; /* Adjust font size for readability */
+  line-height: 1.8; /* Add line height for better spacing */
+  color: #333; /* Neutral text color */
+  margin-bottom: 15px; /* Space between paragraphs */
+}
+
+.about-section a {
+  color: #6a0dad; /* Highlight links with theme color */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Emphasize links */
+  transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.about-section a:hover {
+  color: #8e44ad; /* Slightly darker color on hover */
+}
+
+.about-section .contact-info {
+  margin-top: 30px; /* Add spacing above contact info */
+  font-size: 1.1rem; /* Make it stand out slightly */
+  color: #555; /* Subtle text color */
+}
+
+.about-section .icon {
+  margin-right: 10px; /* Space between icon and text */
+  color: #6a0dad; /* Match theme */
+  vertical-align: middle; /* Align with text */
+}
+
 /* Buttons Section */
 .button-container {
   text-align: center;
