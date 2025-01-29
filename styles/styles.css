@@ -5,30 +5,43 @@
   box-sizing: border-box;
 }
 
-/* Navigation Bar */
-.navbar {
-  background-color: #2c3e50;
-  padding: 10px 0; /* Add vertical spacing */
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  margin-top: 20px; /* Adds spacing below the banner */
+/* Banner Section */
+.banner {
+  background: linear-gradient(90deg, #6a0dad, #8e44ad); /* Gradient purple */
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  font-family: 'Roboto', sans-serif; /* Use Roboto for the banner */
 }
 
+.banner .logo {
+  max-width: 400px; /* Adjust size as needed */
+  height: auto;
+  margin: 0 auto;
+}
+
+.banner img {
+  height: 120px; /* Adjust logo size */
+}
+
+.banner p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Navigation Bar */
 .nav-links ul {
   list-style: none; /* Remove bullets */
-  margin: 0; /* Remove default margin */
+  margin: 20px 0 0; /* Add margin above links */
   padding: 0; /* Remove default padding */
   display: flex; /* Flexbox for horizontal layout */
   justify-content: center; /* Center-align the links */
   gap: 20px; /* Add spacing between links */
 }
 
-.nav-links ul li {
-  margin: 0;
-}
-
 .nav-links ul li a {
   text-decoration: none; /* Remove underline */
-  color: #ecf0f1; /* Light gray text */
+  color: white; /* White text */
   font-weight: bold; /* Make text bold */
   font-size: 16px; /* Adjust font size */
   padding: 10px 20px; /* Add padding to links */
@@ -39,40 +52,6 @@
 .nav-links ul li a:hover {
   background-color: #00ffcc; /* Highlight background */
   color: #2c3e50; /* Dark text on hover */
-}
-
-.logo {
-  max-width: 400px; /* Adjust the size as needed */
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
-.logo img {
-  height: 250px;
-}
-
-#homepage .navigation-bar {
-  display: none;
-}
-
-/* Banner Section */
-.banner {
-  background: linear-gradient(90deg, #6a0dad, #8e44ad); /* Gradient purple */
-  color: white;
-  text-align: center;
-  padding: 50px 20px;
-  font-family: 'Roboto', sans-serif; /* Use Roboto for banner */
-}
-
-.banner h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-  font-family: 'Open Sans', sans-serif; /* Highlight header */
-}
-
-.banner p {
-  font-size: 1.2rem;
 }
 
 /* New Uploads Section */
