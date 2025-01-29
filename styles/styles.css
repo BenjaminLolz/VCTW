@@ -56,6 +56,26 @@
   color: #2c3e50; /* Dark text on hover */
 }
 
+/* Front page videos */
+.front-page-video-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.front-page-video-grid .video {
+    width: 30%; /* Adjust as needed */
+    max-width: 400px; /* Maintain maximum width */
+    min-width: 280px;
+}
+
+.front-page-video-grid iframe {
+    width: 100%;
+    height: 220px; /* Adjust height for front page */
+    border-radius: 8px;
+}
+
 /* New Uploads Section */
 .new-uploads {
   padding: 20px;
@@ -98,9 +118,8 @@
 
 .video-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ensures videos fit nicely */
-    gap: 1em; /* Add spacing between items */
-    justify-items: center; /* Center-align grid items */
+    grid-template-columns: repeat(4, 1fr); /* 4 videos per row */
+    gap: 1em;
 }
 
 .video-container {
@@ -115,9 +134,9 @@
 }
 
 .video iframe {
-    width: 100%; /* Ensure iframe takes full width of the container */
-    height: 180px; /* Set a consistent height */
-    border-radius: 8px; /* Rounded corners for iframes */
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
 }
 
 .video-container h3 {
