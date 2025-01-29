@@ -11,7 +11,7 @@
   color: white;
   text-align: center;
   padding: 50px 20px; /* Adjust padding for overall banner */
-  font-family: 'Roboto', sans-serif; /* Use Roboto for the banner */
+  font-family: 'Poppins', sans-serif; /* Use Poppins for a modern look */
 }
 
 .banner .logo {
@@ -78,24 +78,11 @@
   border-radius: 8px; /* Match the container's rounded corners */
 }
 
-/* Video Titles and Captions */
 .front-page-video-grid .video p {
-  font-family: 'Open Sans', sans-serif; /* Use Open Sans for readability */
-  font-size: 16px; /* Larger font size for better visibility */
-  font-weight: 600; /* Slightly bold for emphasis */
-  color: #2c3e50; /* Dark navy color for contrast */
-  margin-top: 10px; /* Space above the caption */
-  line-height: 1.4; /* Adjust line height for better readability */
-  text-align: center; /* Center-align text */
-}
-
-.front-page-video-grid .video-title {
-  font-family: 'Roboto', sans-serif; /* Use Roboto for titles */
-  font-size: 18px; /* Slightly larger font size for titles */
-  font-weight: bold; /* Make titles bold */
-  color: #6a0dad; /* Match the purple gradient theme */
-  text-align: center; /* Center-align titles */
-  margin-bottom: 5px; /* Space below the title */
+  margin: 10px 0 0; /* Add space above the caption */
+  color: #333; /* Caption text color */
+  font-size: 14px; /* Adjust font size for captions */
+  font-family: 'Poppins', sans-serif; /* Modern font for captions */
 }
 
 /* Video Grid for Video Page */
@@ -122,7 +109,7 @@
 
 /* Video Captions */
 .video p {
-  font-family: 'Open Sans', sans-serif; /* Use Open Sans for readability */
+  font-family: 'Poppins', sans-serif; /* Use Poppins for readability */
   font-size: 16px; /* Larger font size for better visibility */
   font-weight: 600; /* Slightly bold */
   color: #2c3e50; /* Dark navy color for captions */
@@ -137,7 +124,7 @@
 
 /* Section Headers (Optional for New Uploads or Other Sections) */
 .new-uploads h2 {
-  font-family: 'Roboto', sans-serif; /* Use Roboto for headings */
+  font-family: 'Poppins', sans-serif; /* Use Poppins for headings */
   font-size: 2rem; /* Larger font size for prominence */
   color: #6a0dad; /* Match the purple gradient theme */
   text-transform: uppercase; /* Make headings uppercase for emphasis */
@@ -145,22 +132,19 @@
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
 }
 
-
 /* New Uploads Section */
 .new-uploads {
   padding: 20px;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: #f8f9fa; /* Light gray background */
 }
 
 .new-uploads h2 {
-  font-family: 'Roboto', sans-serif; /* Use Roboto for headings */
-  font-size: 2rem; /* Larger font size for prominence */
-  color: #6a0dad; /* Match the purple gradient theme */
-  text-transform: uppercase; /* Make headings uppercase for emphasis */
-  margin-bottom: 20px; /* Add space below */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif; /* Bold headers */
+  color: #2c3e50; /* Navy for section headers */
 }
 
 /* Buttons Section */
@@ -179,6 +163,7 @@
   font-size: 16px;
   font-weight: bold;
   transition: background 0.3s ease;
+  font-family: 'Poppins', sans-serif; /* Match font */
 }
 
 .button:hover {
@@ -192,7 +177,7 @@ footer {
   text-align: center;
   padding: 10px 0;
   font-size: 0.9rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 footer a {
