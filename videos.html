@@ -1,33 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Videos</title>
-    <link rel="stylesheet" href="styles/styles.css?v=2">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Videos - Videoke Change The World</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <header class="navbar">
-        <div class="banner">
-            <img src="styles/red.png" alt="Videoke Change The World Logo" class="logo">
-            <p>Sing your heart out with the latest karaoke videos!</p>
-            <nav class="nav-links">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="videos.html">Videos</a></li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <header class="navbar">
+    <div class="banner">
+      <img src="styles/red.png" alt="Videoke Change The World Logo" class="logo">
+      <p>Sing your heart out with the latest karaoke videos!</p>
+      <nav class="nav-links">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="videos.html">Videos</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <section class="video-section">
-        <input type="text" id="search-bar" placeholder="Search for a song..."/>
-
-        <script src="search.js" defer></script>
-
-        <div class="video-grid">
+  <main>
+    <div class="search-bar-container">
+      <input type="text" id="search-bar" placeholder="Search for a song..." oninput="filterVideos()">
+    </div>
+        <div id="video-grid" class="front-page-video-grid">
             <div class="video" data-title="Superman (It's Not Easy) - Five For Fighting">
                 <iframe src="https://www.youtube.com/embed/7JVN_lBbFXA?si=4jZ8yt9M26G3B-H2" title="Superman (It's Not Easy) - Five For Fighting (Videoke)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <p>Superman (It's Not Easy) - Five For Fighting (Videoke)</p>
@@ -268,8 +266,8 @@
               <iframe src="https://www.youtube.com/embed/x-w-tBiJrpQ?si=4fYPrtM6qCXocZ94" title="214 - Rivermaya (Videoke)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               <p>214 - Rivermaya (Videoke)</p>
             </div>
-        </div>
-    </section>
+      </div>
+  </main>
 
   <footer>
     <footer class="quick-access-toolbar">
