@@ -6,7 +6,6 @@
 }
 
 /* Navigation Bar */
-/* Navigation Bar */
 .navbar {
   background-color: #2c3e50; /* Dark navy background */
   padding: 10px 0; /* Add vertical spacing */
@@ -40,7 +39,6 @@
   background-color: #00ffcc; /* Highlight background */
   color: #2c3e50; /* Dark text on hover */
 }
-
 
 .logo {
     max-width: 400px; /* Adjust the size as needed */
