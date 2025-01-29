@@ -81,52 +81,82 @@ nav {
   font-family: 'Open Sans', sans-serif; /* Bold headers */
   color: #2c3e50; /* Navy for section headers */
 }
-/* Video Grid */
-.video-grid {
-  display: flex; /* Switch to flex for better alignment */
-  flex-wrap: wrap; /* Allow wrapping of items */
-  justify-content: center; /* Center-align items horizontally */
-  gap: 20px; /* Add spacing between videos */
+
+/* Video Section */
+.video-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
   padding: 20px;
 }
 
-/* Video Container */
-.video-container {
-  width: 100%; /* Ensure it adjusts to the grid/parent container */
-  max-width: 300px; /* Limit the width of the video boxes */
-  margin: 0 auto; /* Center-align each video container */
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-color: #ffffff;
+.video-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
 }
 
-.video-container:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+.video-container {
+  background-color: white;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 220px;
+  border-radius: 8px;
 }
 
 .video-container h3 {
-  font-family: 'Open Sans', sans-serif; /* Titles use Open Sans */
-  font-weight: 600;
   font-size: 18px;
-  margin: 10px 15px 5px; /* Space around titles */
-  color: #2c3e50; /* Navy for video titles */
+  color: #2c3e50;
+  margin-top: 10px;
 }
 
 .video-description {
-  margin: 0 15px 15px; /* Padding around description */
   font-size: 14px;
-  color: #666; /* Gray for descriptions */
-  line-height: 1.5;
+  color: #666;
+  margin: 10px;
   text-align: justify;
+}
+
+/* Buttons Section */
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color: #6c63ff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background-color: #5848c2;
 }
 
 /* Footer */
 footer {
-  background-color: #2c3e50; /* Navy footer */
-  color: #ecf0f1; /* Light text */
+  background-color: #2c3e50;
+  color: #ecf0f1;
   text-align: center;
   padding: 10px 0;
   font-size: 0.9rem;
@@ -146,102 +176,16 @@ footer a:hover {
 /* Responsive Design */
 @media (max-width: 768px) {
   .video-grid {
-    flex-direction: column; /* Stack videos vertically */
-    align-items: center; /* Center each video */
+    flex-direction: column;
+    align-items: center;
   }
 
   .video-container {
-    width: 90%; /* Reduce width for mobile */
-    margin: 10px auto; /* Ensure centering */
-  }
-}
-
-.new-uploads, .about, .video-section {
-    margin: 2em;
-    text-align: center;
-}
-
-.video-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1em;
-}
-
-.video iframe {
-    width: 100%;
-    height: 200px;
-    border-radius: 8px;
-}
-
-#search-bar {
-    padding: 10px;
-    width: 80%;
-    margin-bottom: 1em;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-@media (max-width: 768px) {
-  .video-container {
-    width: 90%; /* Take up 90% of the screen width on smaller devices */
+    width: 90%;
+    margin: 10px auto;
   }
 
   .video-description {
-    font-size: 14px; /* Adjust font size for readability */
+    font-size: 14px;
   }
-/* Desktop-specific layout */
-@media (min-width: 769px) {
-  .video-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    justify-content: center;
-    align-items: start;
-  }
-
-  .video-container {
-    max-width: 300px; /* Keep the video container width consistent */
-    margin: 0 auto; /* Center-align the containers */
-  }
-
-  .more-videos {
-    text-align: center;
-    margin: 20px 0;
-  }
-  
-  .more-videos .btn {
-      background-color: #6c63ff; /* Adjust color */
-      color: white;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-  }
-  
-  .more-videos .btn:hover {
-      background-color: #5848c2; /* Hover effect */
-  }
-  
-  .quick-access-toolbar {
-    background-color: #333; /* Dark background */
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
-  .quick-access-toolbar a {
-      color: white;
-      text-decoration: none;
-      margin: 0 10px;
-  }
-  .quick-access-toolbar a:hover {
-      text-decoration: underline;
-    
 }
-
-}
-
-
-
