@@ -10,7 +10,7 @@
   background: linear-gradient(90deg, #6a0dad, #8e44ad); /* Gradient purple */
   color: white;
   text-align: center;
-  padding: 50px 20px;
+  padding: 50px 20px; /* Adjust padding for overall banner */
   font-family: 'Roboto', sans-serif; /* Use Roboto for the banner */
 }
 
@@ -26,17 +26,19 @@
 
 .banner p {
   font-size: 1.2rem;
-  margin-top: 10px;
+  margin-top: 10px; /* Space above the slogan text */
+  margin-bottom: 30px; /* Add space below the slogan for separation */
 }
 
 /* Navigation Bar */
 .nav-links ul {
   list-style: none; /* Remove bullets */
-  margin: 20px 0 0; /* Add margin above links */
+  margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
   display: flex; /* Flexbox for horizontal layout */
   justify-content: center; /* Center-align the links */
   gap: 20px; /* Add spacing between links */
+  margin-top: 10px; /* Add spacing between navigation bar and slogan */
 }
 
 .nav-links ul li a {
@@ -118,6 +120,7 @@
   margin: 10px;
   text-align: justify;
 }
+
 /* Buttons Section */
 .button-container {
   text-align: center;
