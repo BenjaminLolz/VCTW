@@ -271,9 +271,12 @@ footer a:hover {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .video-grid {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust for mobile */
-    gap: 1em; /* Maintain spacing between items */
+  .video-grid,
+  .front-page-video-grid {
+    grid-template-columns: 1fr; /* Stack videos in a single column */
+    gap: 20px; /* Add spacing between video containers */
+    padding: 20px; /* Ensure padding around the grid */
+    margin-bottom: 50px; /* Add space between the grid and the footer */
   }
 
   .video-container {
