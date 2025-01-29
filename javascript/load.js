@@ -3,48 +3,53 @@ const videosPerLoad = 8;
 const videoGrid = document.getElementById("video-grid");
 const loadMoreButton = document.getElementById("load-more");
 const searchBar = document.getElementById("search-bar");
-let videos = []; // Empty array to be populated by the separate script
+let videos = [];
 
-// Function to render videos (used for both load and search)
-function renderVideos(videoList) {
-  videoGrid.innerHTML = ""; // Clear current videos
-  videoList.forEach((video) => {
-    const videoDiv = document.createElement("div");
-    videoDiv.className = "video";
-    videoDiv.innerHTML = `
-      <iframe src="${video.url}" title="${video.title}" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      <p>${video.title}</p>
+// Function to create video elements without loading iframes immediately
+function createVideoElement(video) {
+  const videoDiv = document.createElement("div");
+  videoDiv.className = "video";
+  videoDiv.setAttribute("data-title", video.title.toLowerCase());
+
+  // Placeholder for lazy loading
+  videoDiv.innerHTML = `
+    <div class="video-thumbnail" data-src="${video.url}">
+      <img src="https://img.youtube.com/vi/${video.url.split("/embed/")[1].split("?")[0]}/hqdefault.jpg" alt="${video.title}">
+      <div class="play-button">▶</div>
+    </div>
+    <p>${video.title}</p>
+  `;
+
+  // Click event to replace image with iframe
+  videoDiv.querySelector(".video-thumbnail").addEventListener("click", function () {
+    this.outerHTML = `
+      <iframe src="${video.url}" title="${video.title}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     `;
-    videoGrid.appendChild(videoDiv);
   });
+
+  return videoDiv;
 }
 
-// Function to load initial videos and "Load More"
+// Function to load next batch of videos
 function loadVideos() {
   const nextVideos = videos.slice(loadedVideos, loadedVideos + videosPerLoad);
-  renderVideos(nextVideos);
+  nextVideos.forEach(video => videoGrid.appendChild(createVideoElement(video)));
   loadedVideos += nextVideos.length;
 
-  // Hide the "Load More" button if all videos are loaded
   if (loadedVideos >= videos.length) {
     loadMoreButton.style.display = "none";
   }
 }
 
-// Search Functionality
+// Search Functionality (Hide instead of clearing)
 function searchVideos(event) {
   const query = event.target.value.toLowerCase();
-  const filteredVideos = videos.filter((video) =>
-    video.title.toLowerCase().includes(query)
-  );
-  renderVideos(filteredVideos);
+  document.querySelectorAll(".video").forEach(video => {
+    const title = video.getAttribute("data-title");
+    video.style.display = title.includes(query) ? "block" : "none";
+  });
 
-  // Hide the "Load More" button during search
-  if (query) {
-    loadMoreButton.style.display = "none";
-  } else if (loadedVideos < videos.length) {
-    loadMoreButton.style.display = "block";
-  }
+  loadMoreButton.style.display = query ? "none" : (loadedVideos < videos.length ? "block" : "none");
 }
 
 // Event Listeners
