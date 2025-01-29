@@ -139,6 +139,32 @@
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
 }
 
+/* Search Bar Styling */
+#search-bar {
+  width: 50%; /* Adjust width to make it prominent but not too wide */
+  padding: 10px 15px; /* Add padding for comfort */
+  font-size: 16px; /* Adjust font size for better readability */
+  font-family: 'Poppins', sans-serif; /* Match website font */
+  border: 2px solid #6a0dad; /* Add a border with the theme color */
+  border-radius: 25px; /* Rounded corners for a modern look */
+  outline: none; /* Remove default focus outline */
+  margin: 20px auto; /* Center-align and add spacing */
+  display: block; /* Center-align using block */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+/* Focus Effect for Search Bar */
+#search-bar:focus {
+  border-color: #8e44ad; /* Change border color on focus */
+  box-shadow: 0 4px 8px rgba(138, 43, 226, 0.3); /* Add glow effect */
+}
+
+/* Placeholder Styling */
+#search-bar::placeholder {
+  color: #bbb; /* Light gray color for placeholder */
+  font-style: italic; /* Make it italic for distinction */
+}
+
 /* Buttons Section */
 .button-container {
   text-align: center;
